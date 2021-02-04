@@ -1,0 +1,26 @@
+.header {
+    background-image: linear-gradient(to right bottom,
+            rgba($color-gray-dark-2, .8),
+            rgba($color-gray-dark-3, .8)),
+        url("../images/hero.jpeg");
+    height: 95vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 75vh, 0 100%);
+    margin-bottom: 20rem;
+    &__copy {
+        width: 75%;
+        margin: auto;
+        position: relative;
+        top: 40%;
+        &--main-text {
+            margin: 0;
+            text-align: left;
+        }
+        &--sub-text {
+            margin: 0;
+        }
+    }
+}

@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+.header {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(153, 153, 153, 0.8)), to(rgba(51, 51, 51, 0.8))), url("../images/hero.jpeg");
+  background-image: linear-gradient(to right bottom, rgba(153, 153, 153, 0.8), rgba(51, 51, 51, 0.8)), url("../images/hero.jpeg");
+  height: 95vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0%, 100% 75vh, 0 100%);
+  margin-bottom: 20rem;
+}
+
+.header__copy {
+  width: 75%;
+  margin: auto;
+  position: relative;
+  top: 40%;
+}
+
+.header__copy--main-text {
+  margin: 0;
+  text-align: left;
+}
+
+.header__copy--sub-text {
+  margin: 0;
+}
+
+.projects {
+  margin: 6rem 0 20rem 0;
+}
+
+.projects__banner {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.projects__container {
+  margin-top: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects__container--desc {
+  width: 40%;
+  margin: 0 5%;
+  padding: 0;
+}
+
+.projects__container--desc h4 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.projects__container--desc p {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  letter-spacing: 1px;
+  text-align: justify;
+  margin: 0;
+}
+
+.projects__container--desc div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+}
+
+.projects__container--desc div a {
+  width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects__container img {
+  width: 40%;
+  margin: 0% 5%;
+  border: none;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(153, 153, 153, 0.8)), to(rgba(51, 51, 51, 0.8))), url("../images/computerdesk.jpg");
+  background-image: linear-gradient(to right bottom, rgba(153, 153, 153, 0.8), rgba(51, 51, 51, 0.8)), url("../images/computerdesk.jpg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top;
+  -webkit-clip-path: polygon(0 25vh, 100% 0%, 100% 100vh, 0 100%);
+          clip-path: polygon(0 25vh, 100% 0%, 100% 100vh, 0 100%);
+}
+
+.contact__banner {
+  text-align: center;
+  position: relative;
+  top: 40%;
+}
+
+.contact__icons {
+  position: relative;
+  top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact__icons--icon {
+  width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact__icons--icon img {
+  width: 20%;
+  margin: auto;
+}
+
+.about {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(153, 153, 153, 0.8)), to(rgba(51, 51, 51, 0.8))), url("../images/contact.jpg");
+  background-image: linear-gradient(to right bottom, rgba(153, 153, 153, 0.8), rgba(51, 51, 51, 0.8)), url("../images/contact.jpg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top;
+  -webkit-clip-path: polygon(0 25vh, 100% 0%, 100% 75vh, 0 100%);
+          clip-path: polygon(0 25vh, 100% 0%, 100% 75vh, 0 100%);
+  margin-bottom: 12rem;
+}
+
+.about__copy {
+  position: relative;
+  top: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about__copy h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about__copy img {
+  margin: auto;
+  margin-bottom: 2rem;
+  width: 10%;
+  border-radius: 50%;
+}
+
+.about__copy p {
+  margin: 0 10%;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+/*# sourceMappingURL=main.css.map */

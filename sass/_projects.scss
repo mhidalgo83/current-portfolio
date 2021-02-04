@@ -1,0 +1,49 @@
+.projects {
+    margin: 6rem 0 20rem 0;
+   
+    &__banner {
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__container {
+        margin-top: 8rem;
+        display: flex;
+        align-items: center;
+        &--desc {
+            width: 40%;
+            margin: 0 5%;
+            padding: 0;
+            h4 {
+                
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+            p {
+                font-size: 1.2rem;
+                line-height: 1.4rem;
+                letter-spacing: 1px;
+                text-align: justify;
+                margin: 0;
+            }
+            div {
+                display: flex;
+                justify-content: center;
+                margin-top: 2rem;
+                a {
+                    width: 10%;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+
+        & img {
+            width: 40%;
+            margin: 0% 5%;
+            border: none;
+
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right bottom,
+            rgba($color-gray-dark-2, .8),
+            rgba($color-gray-dark-3, .8)),
+        url("../images/computerdesk.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 25vh, 100% 0%, 100% 100vh, 0 100%);
+    &__banner{
+        text-align: center;
+        position: relative;
+        top: 40%;
+    }
+
+    &__icons {
+        position: relative;
+        top: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &--icon {
+            width: 10%;
+            display: flex;
+            img {
+                width: 20%;
+                margin: auto;
+            }
+           
+        }
+    }
+}
