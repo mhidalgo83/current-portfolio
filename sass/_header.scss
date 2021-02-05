@@ -7,20 +7,36 @@
     width: 100%;
     background-size: cover;
     background-position: top;
-    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 75vh, 0 100%);
     clip-path: polygon(0 0, 100% 0%, 100% 75vh, 0 100%);
     margin-bottom: 20rem;
+    @include respond(phone) {
+        height: 80vh;
+        clip-path: polygon(0 0, 100% 0%, 100% 60vh, 0 100%);
+    }
     &__copy {
         width: 75%;
         margin: auto;
         position: relative;
         top: 40%;
+        @include respond(desktop) {
+            top: 30%;
+        }
+        @include respond(phone) {
+            top: 25%;
+        }
+
         &--main-text {
             margin: 0;
             text-align: left;
+            @include respond(phone) {
+                font-size: 3em;
+            }
         }
         &--sub-text {
             margin: 0;
+            @include respond(phone) {
+                font-size: 2.5em;
+            }
         }
     }
 }

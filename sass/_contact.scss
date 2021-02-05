@@ -25,6 +25,12 @@
         &--icon {
             width: 10%;
             display: flex;
+            @include respond(tab-port) {
+                width: 20%;
+            }
+            @include respond(phone) {
+                width: 30%;
+            }
             img {
                 width: 20%;
                 margin: auto;

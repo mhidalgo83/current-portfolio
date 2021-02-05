@@ -16,17 +16,36 @@
         top: 10rem;
         display: flex;
         flex-direction: column;
-
+        @include respond(desktop) {
+            top: 15%;
+        }
+        @include respond(tab-land) {
+            top: 20%;
+        }
         h1 {
             text-align: center;
             text-transform: uppercase;
+            margin: 0;
+            margin-top: 2rem;
+            @include respond(phone) {
+                font-size: 4em;
+            }
         }
 
         img {
             margin: auto;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
             width: 10%;
             border-radius: 50%;
+            @include respond(desktop) {
+                width: 12%;
+            }
+            @include respond(tab-port) {
+                width: 20%;
+            }
+            @include respond(phone) {
+                display: none;
+            }
         }
 
         p {
@@ -35,6 +54,12 @@
             line-height: 1.4rem;
             letter-spacing: 1px;
             text-align: justify;
+            @include respond(tab-port) {
+                font-size: 1.4em;
+            }
+            @include respond(phone) {
+                font-size: 1.2em;
+            }
         }
     }
 }
